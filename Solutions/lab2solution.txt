@@ -1,0 +1,43 @@
+1. Convert 1590 to Binary
+1 1 0 0 0 1 1 0 1 1 0
+
+2. Convert 101110110
+374
+
+3. Convert 0b1100 0000 0001 1010 0001 0101 1011 1010 1101 to hexadecimal.
+12/0/1/10/1/5/11/10/13
+C 0 1 A 1 5 B A D 
+
+4. Convert 0b100 001 101 101 to octal.
+4 1 5 5
+
+5. Convert 0o31337 to binary.
+0b 011/001/011/011/111
+
+6. Convert 0xBADF00D to binary and then to octal.
+0b 1011/1010/1101/1111/0000/0000/1101
+0b 1/011/101/011/011/111/000/000/001/101
+0o 1/3/5/3/3/7/0/0/1/5 
+
+7. Convert 0o6157 to binary and then to decimal.
+0b 110/001/101/111
+0d 3183
+
+8. Convert 497 to binary. Then, use two’s complement to convert 497 to -497 in binary.
+0b 111110001
+-497 = 1000011111
+
+9. Convert 900.79 to binary up to the 1/16ths spot.
+1110000100.1100
+
+10. Count from 0 through 10 in ternary (base 3). Note: the algorithm for counting is similar regardless of the number base. Show the place values.
+1 1
+2 2
+3 10 
+4 11 
+5 12 
+6 20
+7 21
+8 22
+9 100 
+10 101 
