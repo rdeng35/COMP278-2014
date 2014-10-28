@@ -1,0 +1,40 @@
+Maximum
+
+Write out source code for a function that computes the maximum of two numbers. (Yes, I know practically every language has a max(a,b) function, I want you to write your own version).
+
+public void greater (int a, int b)
+int greater; 
+{if (a>=b)
+greater = a;
+else 
+greater = b;
+}
+Write out equivalent assembly code for source code. One stipulation: the two numbers should be loaded from RAM. 
+Hint: the STOR instruction doesn’t work. Store the result into a register. To move data from Rs to Rd, ADD Rd, Rs, R0 (R0 is constant 0).
+;R1=0x01
+;R2=0x02
+;R3
+
+
+0	LOAD R1, 0x01
+1 	LOAD R2, 0x02
+2 	LOAD R4, 0x00
+3	SUB R3,R1,R2
+4	JZG R3, 8
+5	SUB R3,R2,R1
+6	JZG R3,9
+7	JZE R0 B
+8	ADD R3,R1,R4
+9	ADD R3,R2,R4	
+
+
+Write out equivalent machine code, and test it in Logisim, using the supplied CPU in circuits/cpu-16bit.circ. Save the contents of RAM as lab7max.txt.
+
+Sum
+
+Write out source code for a function that computes the sum of an array of integers. (Yes, I know practically every language has a sum(array) function, 
+I want you to write your own version). Write it with the assumption that the length is given separately from the array: int sum(int length, int[] array);
+
+Write out equivalent assembly code for source code. One stipulation: the array should be loaded from RAM, and the size of the array should be read first. Hint: use the LOAD Ra instruction (opcode d in hex).
+
+Write out equivalent machine code, and test it in Logisim, using the supplied CPU in circuits/cpu-16bit.circ. Save the contents of RAM as lab7sum.txt.

@@ -53,30 +53,29 @@ Identity 1 = 1
 a+c = a+c Idempotence
 
 4)a' * (a + b) + (b + a * a) * (a + b')
-a' *(a+b) + a * (a+b') Absorption
-a'*a + b * a' + a*(a+b') Distributive
-b*a' + a'*a +a*(a+b') Commutative
-b*a' * a *(a+b') Idempotence
-b*0(a+b') Complement
-0(a+b') Identity
-0*a+0*b' Distributive
-0*a*b' Identity
-0 Identity
+a'*(a+b)+a*(a+b') Absorption
+a'*a+a'*b+a*(a+b') Distributive
+a' + b +a * (a+b') Complement
+b + a' + a * (a+b') Commutative
+b+ 1 * (a+b') Complement
+1 *(a+b') identity
+a+b' Identity
+
 
 5) (a' * b') + (a' * b) + (a * b') = (a * b)'
 
 (a'(b'+b)) + (a*b') = (a*b)' Distributive
 (a'(1)) + (a*b') = (a*b)' Identity
 a' + a *b' = (a*b)' Complement 
-a' + b' *a = (a*b)' Commutative
-(a*b)' *a = (a*b)' DeMorgans
-
+(a'+a) * (a'+b') = (a*b)' Distributive
+1 * (a'+b') = (a*b)' Identity
+(a*b)' =(a*b)' DeMorgans
 
 DUAL FORM
 1) (a + b)' + c * a' + 1
 (a*b)' * c +a' *0
-2) 1 + 1 * 0'
-0 * 0 + 0'
+2) 1 + 1 * 1'
+0 * 0 + 1'
 
 Convert Karnaugh Map
 A B X Y   F(ABXY)
@@ -96,7 +95,6 @@ A B X Y   F(ABXY)
 1 1 0 1 	0
 1 1 1 0 	1
 1 1 1 1 	1
-
 
 
 
